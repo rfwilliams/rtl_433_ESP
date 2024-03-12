@@ -65,7 +65,7 @@ void rtlSetup() {
     logprintfLn(LOG_DEBUG, "sizeof(cfg) %d, heap %d", sizeof(cfg),
                 ESP.getFreeHeap());
 #endif
-    cfg->conversion_mode = CONVERT_SI; // Default all output to Celsius
+    cfg->conversion_mode = CONVERT_CUSTOMARY; // Default all output to Celsius
     if (rtl_433_ESP::ookModulation) {
       cfg->num_r_devices = NUMOF_OOK_DEVICES;
     } else {
